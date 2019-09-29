@@ -1,0 +1,35 @@
+{
+  "restrictToPackagePrefixes": [
+    "androidx/"
+  ],
+  "reversedRestrictToPackagePrefixes": [],
+  "rules": [
+    {
+      "from": "androidx/(.*)",
+      "to": "myandroidx/{0}"
+    },
+  ],
+  "packageMap": [
+    {
+      "from": "androidx/constraintlayout/widget",
+      "to": "myandroidx/constraintlayout/widget"
+    }
+  ],
+  "pomRules": [],
+  "versions": {
+    "latestReleased": {}
+  },
+  "map": {
+    "types": {}
+  },
+  "proGuardMap": {
+    "rules": {
+      "androidx/{any}": [
+        "myandroidx/{any}"
+      ]
+    }
+  },
+  "stringsMap": {
+    "types": {}
+  }
+}
